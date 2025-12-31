@@ -1,0 +1,7 @@
+request_id: demo-forgery
+total_frames: 310
+warmup_frames: 3
+average_residual_ratio: 0.087242
+max_residual_ratio: 0.129910
+residual_threshold: 0.15
+suspicious_frames(sample<=100): []

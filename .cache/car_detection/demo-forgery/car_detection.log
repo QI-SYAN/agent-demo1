@@ -1,0 +1,1552 @@
+视频帧的宽度: 1320, 高度: 1080
+Ultralytics Solutions:  {'source': None, 'model': 'D:\\resouce_bs\\best2.pt', 'classes': None, 'show_conf': True, 'show_labels': True, 'region': None, 'colormap': 21, 'show_in': True, 'show_out': True, 'up_angle': 145.0, 'down_angle': 90, 'kpts': [6, 8, 10], 'analytics_type': 'line', 'figsize': (12.8, 7.2), 'blur_ratio': 0.5, 'vision_point': (20, 20), 'crop_dir': 'cropped-detections', 'json_file': None, 'line_width': 2, 'records': 5, 'fps': 30.0, 'max_hist': 5, 'meter_per_pixel': 0.05, 'max_speed': 120, 'show': False, 'iou': 0.7, 'conf': 0.25, 'device': None, 'max_det': 300, 'half': False, 'tracker': 'botsort.yaml', 'verbose': True, 'data': 'images'}
+Ultralytics Solutions:  {'source': None, 'model': 'D:\\resouce_bs\\best2.pt', 'classes': None, 'show_conf': True, 'show_labels': True, 'region': None, 'colormap': 21, 'show_in': True, 'show_out': True, 'up_angle': 145.0, 'down_angle': 90, 'kpts': [6, 8, 10], 'analytics_type': 'line', 'figsize': (12.8, 7.2), 'blur_ratio': 0.5, 'vision_point': (20, 20), 'crop_dir': 'cropped-detections', 'json_file': None, 'line_width': 2, 'records': 5, 'fps': 30.0, 'max_hist': 5, 'meter_per_pixel': 0.05, 'max_speed': 120, 'show': False, 'iou': 0.7, 'conf': 0.25, 'device': None, 'max_det': 300, 'half': False, 'tracker': 'botsort.yaml', 'verbose': True, 'data': 'images'}
+Folder created at D:/bishe/LangGraph/video_tampering_agent/.cache/car_detection/demo-forgery/images
+
+0: 544x640 18 cars, 2 trucks, 2 buss, 1 other, 112.7ms
+Speed: 30.2ms preprocess, 112.7ms inference, 1.6ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 0
+
+0: 544x640 19 cars, 1 truck, 2 buss, 1 other, 70.3ms
+Speed: 2.2ms preprocess, 70.3ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 1
+
+0: 544x640 19 cars, 3 trucks, 2 buss, 1 other, 91.5ms
+Speed: 3.2ms preprocess, 91.5ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 2
+
+0: 544x640 18 cars, 3 trucks, 2 buss, 1 other, 69.4ms
+Speed: 3.4ms preprocess, 69.4ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 3
+
+0: 544x640 17 cars, 3 trucks, 2 buss, 1 other, 62.7ms
+Speed: 2.9ms preprocess, 62.7ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 4
+
+0: 544x640 18 cars, 3 trucks, 2 buss, 1 other, 66.1ms
+Speed: 2.9ms preprocess, 66.1ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 5
+
+0: 544x640 21 cars, 3 trucks, 2 buss, 1 other, 64.5ms
+Speed: 2.8ms preprocess, 64.5ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 6
+
+0: 544x640 18 cars, 3 trucks, 1 bus, 1 other, 66.6ms
+Speed: 2.8ms preprocess, 66.6ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 7
+
+0: 544x640 18 cars, 4 trucks, 1 bus, 1 other, 97.3ms
+Speed: 3.4ms preprocess, 97.3ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 8
+
+0: 544x640 19 cars, 4 trucks, 2 buss, 1 other, 90.9ms
+Speed: 3.2ms preprocess, 90.9ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 9
+
+0: 544x640 23 cars, 3 trucks, 1 bus, 1 other, 93.3ms
+Speed: 2.7ms preprocess, 93.3ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 10
+
+0: 544x640 23 cars, 3 trucks, 1 bus, 1 other, 95.0ms
+Speed: 3.9ms preprocess, 95.0ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 11
+
+0: 544x640 23 cars, 2 trucks, 1 bus, 1 other, 90.2ms
+Speed: 2.9ms preprocess, 90.2ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 12
+
+0: 544x640 23 cars, 3 trucks, 1 bus, 1 other, 66.6ms
+Speed: 3.0ms preprocess, 66.6ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 13
+
+0: 544x640 23 cars, 4 trucks, 1 bus, 1 other, 66.0ms
+Speed: 2.5ms preprocess, 66.0ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 14
+
+0: 544x640 22 cars, 3 trucks, 1 bus, 1 other, 86.5ms
+Speed: 2.6ms preprocess, 86.5ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 15
+
+0: 544x640 25 cars, 2 trucks, 1 bus, 1 other, 94.8ms
+Speed: 3.5ms preprocess, 94.8ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 16
+
+0: 544x640 24 cars, 2 trucks, 1 bus, 1 other, 96.0ms
+Speed: 3.1ms preprocess, 96.0ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 17
+
+0: 544x640 24 cars, 2 trucks, 1 bus, 1 other, 92.5ms
+Speed: 2.8ms preprocess, 92.5ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 18
+
+0: 544x640 24 cars, 2 trucks, 1 bus, 1 other, 89.1ms
+Speed: 2.9ms preprocess, 89.1ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 19
+
+0: 544x640 25 cars, 1 truck, 1 bus, 1 other, 98.6ms
+Speed: 2.8ms preprocess, 98.6ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 20
+
+0: 544x640 27 cars, 2 trucks, 1 bus, 1 other, 94.5ms
+Speed: 3.3ms preprocess, 94.5ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 21
+
+0: 544x640 25 cars, 4 trucks, 1 bus, 1 other, 93.7ms
+Speed: 3.1ms preprocess, 93.7ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 22
+
+0: 544x640 27 cars, 3 trucks, 1 bus, 1 other, 88.1ms
+Speed: 2.9ms preprocess, 88.1ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 23
+
+0: 544x640 28 cars, 2 trucks, 1 bus, 1 other, 89.2ms
+Speed: 2.9ms preprocess, 89.2ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 24
+
+0: 544x640 28 cars, 3 trucks, 1 bus, 1 other, 75.4ms
+Speed: 3.1ms preprocess, 75.4ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 25
+
+0: 544x640 28 cars, 3 trucks, 1 bus, 1 other, 66.0ms
+Speed: 2.9ms preprocess, 66.0ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 26
+
+0: 544x640 27 cars, 3 trucks, 1 other, 86.9ms
+Speed: 2.9ms preprocess, 86.9ms inference, 0.5ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 27
+
+0: 544x640 26 cars, 2 trucks, 1 other, 98.6ms
+Speed: 3.2ms preprocess, 98.6ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 28
+
+0: 544x640 26 cars, 2 trucks, 1 bus, 1 other, 97.9ms
+Speed: 3.4ms preprocess, 97.9ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 29
+
+0: 544x640 27 cars, 3 trucks, 1 bus, 1 other, 104.6ms
+Speed: 3.0ms preprocess, 104.6ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 30
+
+0: 544x640 27 cars, 3 trucks, 1 bus, 1 other, 84.1ms
+Speed: 3.3ms preprocess, 84.1ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 31
+
+0: 544x640 26 cars, 2 trucks, 1 other, 68.5ms
+Speed: 3.4ms preprocess, 68.5ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 32
+
+0: 544x640 28 cars, 1 truck, 1 other, 67.1ms
+Speed: 2.9ms preprocess, 67.1ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 33
+
+0: 544x640 27 cars, 2 trucks, 1 other, 69.2ms
+Speed: 3.0ms preprocess, 69.2ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 34
+
+0: 544x640 27 cars, 2 trucks, 1 bus, 1 other, 69.6ms
+Speed: 2.8ms preprocess, 69.6ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 35
+
+0: 544x640 27 cars, 2 trucks, 1 bus, 1 other, 72.8ms
+Speed: 2.9ms preprocess, 72.8ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 36
+
+0: 544x640 26 cars, 3 trucks, 1 bus, 1 other, 83.4ms
+Speed: 3.3ms preprocess, 83.4ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 37
+
+0: 544x640 26 cars, 3 trucks, 1 bus, 1 other, 70.6ms
+Speed: 3.2ms preprocess, 70.6ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 38
+
+0: 544x640 18 cars, 6 trucks, 1 bus, 1 other, 67.2ms
+Speed: 3.1ms preprocess, 67.2ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 39
+
+0: 544x640 17 cars, 8 trucks, 1 bus, 1 other, 77.0ms
+Speed: 3.4ms preprocess, 77.0ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 40
+
+0: 544x640 19 cars, 5 trucks, 1 bus, 1 other, 68.1ms
+Speed: 2.9ms preprocess, 68.1ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 41
+
+0: 544x640 17 cars, 7 trucks, 87.2ms
+Speed: 3.5ms preprocess, 87.2ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 42
+
+0: 544x640 19 cars, 6 trucks, 67.5ms
+Speed: 3.3ms preprocess, 67.5ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 43
+
+0: 544x640 20 cars, 6 trucks, 1 other, 67.7ms
+Speed: 3.2ms preprocess, 67.7ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 44
+
+0: 544x640 17 cars, 8 trucks, 70.2ms
+Speed: 3.2ms preprocess, 70.2ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 45
+
+0: 544x640 20 cars, 7 trucks, 1 other, 69.1ms
+Speed: 3.8ms preprocess, 69.1ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 46
+
+0: 544x640 18 cars, 5 trucks, 1 other, 69.0ms
+Speed: 3.0ms preprocess, 69.0ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 47
+
+0: 544x640 19 cars, 7 trucks, 68.0ms
+Speed: 3.0ms preprocess, 68.0ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 48
+
+0: 544x640 20 cars, 7 trucks, 68.4ms
+Speed: 2.9ms preprocess, 68.4ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 49
+
+0: 544x640 21 cars, 5 trucks, 78.5ms
+Speed: 2.9ms preprocess, 78.5ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 50
+
+0: 544x640 14 cars, 8 trucks, 67.8ms
+Speed: 2.9ms preprocess, 67.8ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 51
+
+0: 544x640 21 cars, 6 trucks, 1 other, 69.3ms
+Speed: 2.9ms preprocess, 69.3ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 52
+
+0: 544x640 20 cars, 6 trucks, 1 other, 68.8ms
+Speed: 4.0ms preprocess, 68.8ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 53
+
+0: 544x640 24 cars, 5 trucks, 1 other, 90.5ms
+Speed: 3.6ms preprocess, 90.5ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 54
+
+0: 544x640 22 cars, 7 trucks, 1 other, 89.4ms
+Speed: 3.7ms preprocess, 89.4ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 55
+
+0: 544x640 23 cars, 7 trucks, 1 other, 92.7ms
+Speed: 3.8ms preprocess, 92.7ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 56
+
+0: 544x640 20 cars, 7 trucks, 1 other, 94.1ms
+Speed: 3.3ms preprocess, 94.1ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 57
+
+0: 544x640 19 cars, 6 trucks, 1 other, 69.4ms
+Speed: 2.8ms preprocess, 69.4ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 58
+
+0: 544x640 20 cars, 5 trucks, 1 other, 69.3ms
+Speed: 2.8ms preprocess, 69.3ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 59
+
+0: 544x640 19 cars, 6 trucks, 1 other, 88.4ms
+Speed: 3.9ms preprocess, 88.4ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 60
+
+0: 544x640 20 cars, 6 trucks, 1 other, 69.1ms
+Speed: 3.2ms preprocess, 69.1ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 61
+
+0: 544x640 22 cars, 5 trucks, 1 other, 72.9ms
+Speed: 2.9ms preprocess, 72.9ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 62
+
+0: 544x640 21 cars, 6 trucks, 1 other, 68.8ms
+Speed: 3.1ms preprocess, 68.8ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 63
+
+0: 544x640 18 cars, 7 trucks, 1 other, 90.3ms
+Speed: 3.3ms preprocess, 90.3ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 64
+
+0: 544x640 19 cars, 6 trucks, 1 other, 70.6ms
+Speed: 2.8ms preprocess, 70.6ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 65
+
+0: 544x640 19 cars, 5 trucks, 70.4ms
+Speed: 3.1ms preprocess, 70.4ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 66
+
+0: 544x640 21 cars, 6 trucks, 74.0ms
+Speed: 3.4ms preprocess, 74.0ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 67
+
+0: 544x640 21 cars, 6 trucks, 1 other, 68.6ms
+Speed: 3.6ms preprocess, 68.6ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 68
+
+0: 544x640 20 cars, 7 trucks, 1 other, 67.1ms
+Speed: 3.2ms preprocess, 67.1ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 69
+
+0: 544x640 26 cars, 4 trucks, 1 other, 70.4ms
+Speed: 3.0ms preprocess, 70.4ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 70
+
+0: 544x640 27 cars, 4 trucks, 1 bus, 1 other, 88.7ms
+Speed: 3.4ms preprocess, 88.7ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 71
+
+0: 544x640 27 cars, 4 trucks, 1 bus, 1 other, 90.0ms
+Speed: 3.0ms preprocess, 90.0ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 72
+
+0: 544x640 25 cars, 6 trucks, 1 other, 81.6ms
+Speed: 3.4ms preprocess, 81.6ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 73
+
+0: 544x640 26 cars, 6 trucks, 1 other, 71.9ms
+Speed: 3.3ms preprocess, 71.9ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 74
+
+0: 544x640 25 cars, 6 trucks, 1 other, 86.4ms
+Speed: 3.4ms preprocess, 86.4ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 75
+
+0: 544x640 26 cars, 5 trucks, 1 other, 75.3ms
+Speed: 3.5ms preprocess, 75.3ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 76
+
+0: 544x640 26 cars, 6 trucks, 1 other, 81.1ms
+Speed: 3.2ms preprocess, 81.1ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 77
+
+0: 544x640 25 cars, 7 trucks, 1 other, 69.7ms
+Speed: 3.4ms preprocess, 69.7ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 78
+
+0: 544x640 24 cars, 7 trucks, 1 other, 70.4ms
+Speed: 3.2ms preprocess, 70.4ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 79
+
+0: 544x640 24 cars, 7 trucks, 1 other, 70.4ms
+Speed: 3.6ms preprocess, 70.4ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 80
+
+0: 544x640 23 cars, 7 trucks, 1 other, 69.7ms
+Speed: 3.1ms preprocess, 69.7ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 81
+
+0: 544x640 23 cars, 7 trucks, 1 other, 87.2ms
+Speed: 3.0ms preprocess, 87.2ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 82
+
+0: 544x640 22 cars, 7 trucks, 1 other, 70.0ms
+Speed: 3.0ms preprocess, 70.0ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 83
+
+0: 544x640 23 cars, 7 trucks, 1 other, 70.5ms
+Speed: 3.2ms preprocess, 70.5ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 84
+
+0: 544x640 22 cars, 7 trucks, 1 other, 89.2ms
+Speed: 3.3ms preprocess, 89.2ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 85
+
+0: 544x640 22 cars, 7 trucks, 1 other, 73.4ms
+Speed: 3.4ms preprocess, 73.4ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 86
+
+0: 544x640 21 cars, 8 trucks, 1 other, 69.2ms
+Speed: 3.5ms preprocess, 69.2ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 87
+
+0: 544x640 21 cars, 7 trucks, 1 other, 71.9ms
+Speed: 3.0ms preprocess, 71.9ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 88
+
+0: 544x640 19 cars, 9 trucks, 1 other, 72.9ms
+Speed: 3.0ms preprocess, 72.9ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 89
+
+0: 544x640 23 cars, 6 trucks, 1 other, 68.8ms
+Speed: 3.1ms preprocess, 68.8ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 90
+
+0: 544x640 23 cars, 6 trucks, 1 other, 86.2ms
+Speed: 3.5ms preprocess, 86.2ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 91
+
+0: 544x640 21 cars, 8 trucks, 1 other, 71.7ms
+Speed: 4.5ms preprocess, 71.7ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 92
+
+0: 544x640 22 cars, 7 trucks, 1 other, 70.5ms
+Speed: 3.3ms preprocess, 70.5ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 93
+
+0: 544x640 24 cars, 8 trucks, 1 other, 72.0ms
+Speed: 3.5ms preprocess, 72.0ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 94
+
+0: 544x640 24 cars, 8 trucks, 82.9ms
+Speed: 3.4ms preprocess, 82.9ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 95
+
+0: 544x640 24 cars, 8 trucks, 75.7ms
+Speed: 3.2ms preprocess, 75.7ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 96
+
+0: 544x640 21 cars, 8 trucks, 71.1ms
+Speed: 3.2ms preprocess, 71.1ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 97
+
+0: 544x640 20 cars, 9 trucks, 70.0ms
+Speed: 3.2ms preprocess, 70.0ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 98
+
+0: 544x640 20 cars, 8 trucks, 70.3ms
+Speed: 3.3ms preprocess, 70.3ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 99
+
+0: 544x640 20 cars, 8 trucks, 1 bus, 83.3ms
+Speed: 3.1ms preprocess, 83.3ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 100
+
+0: 544x640 21 cars, 6 trucks, 2 buss, 68.2ms
+Speed: 3.2ms preprocess, 68.2ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 101
+
+0: 544x640 20 cars, 7 trucks, 71.9ms
+Speed: 3.6ms preprocess, 71.9ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 102
+
+0: 544x640 21 cars, 4 trucks, 2 buss, 71.2ms
+Speed: 3.0ms preprocess, 71.2ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 103
+
+0: 544x640 21 cars, 5 trucks, 1 other, 91.0ms
+Speed: 3.9ms preprocess, 91.0ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 104
+
+0: 544x640 21 cars, 6 trucks, 1 bus, 1 other, 68.5ms
+Speed: 3.2ms preprocess, 68.5ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 105
+
+0: 544x640 20 cars, 6 trucks, 3 buss, 68.8ms
+Speed: 3.4ms preprocess, 68.8ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 106
+
+0: 544x640 23 cars, 6 trucks, 2 buss, 1 other, 70.5ms
+Speed: 3.1ms preprocess, 70.5ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 107
+
+0: 544x640 23 cars, 6 trucks, 3 buss, 77.8ms
+Speed: 3.0ms preprocess, 77.8ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 108
+
+0: 544x640 26 cars, 6 trucks, 1 bus, 74.2ms
+Speed: 3.0ms preprocess, 74.2ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 109
+
+0: 544x640 26 cars, 5 trucks, 2 buss, 74.9ms
+Speed: 3.1ms preprocess, 74.9ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 110
+
+0: 544x640 25 cars, 5 trucks, 1 bus, 1 other, 68.6ms
+Speed: 3.4ms preprocess, 68.6ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 111
+
+0: 544x640 25 cars, 5 trucks, 2 buss, 70.8ms
+Speed: 2.9ms preprocess, 70.8ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 112
+
+0: 544x640 27 cars, 2 trucks, 1 other, 93.2ms
+Speed: 2.8ms preprocess, 93.2ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 113
+
+0: 544x640 26 cars, 3 trucks, 1 other, 72.5ms
+Speed: 3.5ms preprocess, 72.5ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 114
+
+0: 544x640 25 cars, 2 trucks, 1 other, 69.8ms
+Speed: 3.1ms preprocess, 69.8ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 115
+
+0: 544x640 24 cars, 3 trucks, 1 other, 68.7ms
+Speed: 3.0ms preprocess, 68.7ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 116
+
+0: 544x640 21 cars, 6 trucks, 1 bus, 69.4ms
+Speed: 3.0ms preprocess, 69.4ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 117
+
+0: 544x640 26 cars, 6 trucks, 1 bus, 90.7ms
+Speed: 3.5ms preprocess, 90.7ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 118
+
+0: 544x640 25 cars, 5 trucks, 1 bus, 83.4ms
+Speed: 3.0ms preprocess, 83.4ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 119
+
+0: 544x640 22 cars, 7 trucks, 1 bus, 73.9ms
+Speed: 3.7ms preprocess, 73.9ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 120
+
+0: 544x640 22 cars, 7 trucks, 1 bus, 102.6ms
+Speed: 3.4ms preprocess, 102.6ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 121
+
+0: 544x640 24 cars, 6 trucks, 1 bus, 69.8ms
+Speed: 3.1ms preprocess, 69.8ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 122
+
+0: 544x640 19 cars, 8 trucks, 1 bus, 85.4ms
+Speed: 3.1ms preprocess, 85.4ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 123
+
+0: 544x640 22 cars, 6 trucks, 1 bus, 71.1ms
+Speed: 3.2ms preprocess, 71.1ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 124
+
+0: 544x640 20 cars, 8 trucks, 2 buss, 74.5ms
+Speed: 3.4ms preprocess, 74.5ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 125
+
+0: 544x640 23 cars, 8 trucks, 1 other, 73.2ms
+Speed: 3.5ms preprocess, 73.2ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 126
+
+0: 544x640 24 cars, 6 trucks, 1 other, 69.3ms
+Speed: 3.3ms preprocess, 69.3ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 127
+
+0: 544x640 22 cars, 4 trucks, 1 other, 86.4ms
+Speed: 3.1ms preprocess, 86.4ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 128
+
+0: 544x640 22 cars, 4 trucks, 1 other, 73.1ms
+Speed: 3.0ms preprocess, 73.1ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 129
+
+0: 544x640 23 cars, 4 trucks, 1 other, 74.3ms
+Speed: 3.3ms preprocess, 74.3ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 130
+
+0: 544x640 22 cars, 5 trucks, 1 other, 72.2ms
+Speed: 3.1ms preprocess, 72.2ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 131
+
+0: 544x640 21 cars, 5 trucks, 1 other, 70.0ms
+Speed: 3.1ms preprocess, 70.0ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 132
+
+0: 544x640 20 cars, 5 trucks, 1 other, 77.7ms
+Speed: 3.3ms preprocess, 77.7ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 133
+
+0: 544x640 18 cars, 7 trucks, 1 other, 87.1ms
+Speed: 3.0ms preprocess, 87.1ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 134
+
+0: 544x640 19 cars, 6 trucks, 1 other, 69.5ms
+Speed: 3.0ms preprocess, 69.5ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 135
+
+0: 544x640 18 cars, 8 trucks, 1 other, 84.8ms
+Speed: 3.3ms preprocess, 84.8ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 136
+
+0: 544x640 20 cars, 5 trucks, 1 other, 68.5ms
+Speed: 3.1ms preprocess, 68.5ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 137
+
+0: 544x640 19 cars, 5 trucks, 69.4ms
+Speed: 3.1ms preprocess, 69.4ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 138
+
+0: 544x640 17 cars, 6 trucks, 73.4ms
+Speed: 24.8ms preprocess, 73.4ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 139
+
+0: 544x640 16 cars, 6 trucks, 73.2ms
+Speed: 3.2ms preprocess, 73.2ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 140
+
+0: 544x640 17 cars, 5 trucks, 73.5ms
+Speed: 3.3ms preprocess, 73.5ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 141
+
+0: 544x640 15 cars, 7 trucks, 71.1ms
+Speed: 3.1ms preprocess, 71.1ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 142
+
+0: 544x640 16 cars, 6 trucks, 71.4ms
+Speed: 3.2ms preprocess, 71.4ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 143
+
+0: 544x640 18 cars, 4 trucks, 92.7ms
+Speed: 3.3ms preprocess, 92.7ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 144
+
+0: 544x640 17 cars, 5 trucks, 72.6ms
+Speed: 3.1ms preprocess, 72.6ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 145
+
+0: 544x640 14 cars, 6 trucks, 72.2ms
+Speed: 3.0ms preprocess, 72.2ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 146
+
+0: 544x640 16 cars, 5 trucks, 89.8ms
+Speed: 3.0ms preprocess, 89.8ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 147
+
+0: 544x640 17 cars, 5 trucks, 71.4ms
+Speed: 3.3ms preprocess, 71.4ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 148
+
+0: 544x640 19 cars, 4 trucks, 72.0ms
+Speed: 3.2ms preprocess, 72.0ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 149
+
+0: 544x640 17 cars, 6 trucks, 70.3ms
+Speed: 3.0ms preprocess, 70.3ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 150
+
+0: 544x640 16 cars, 6 trucks, 82.7ms
+Speed: 3.6ms preprocess, 82.7ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 151
+
+0: 544x640 16 cars, 6 trucks, 71.8ms
+Speed: 3.2ms preprocess, 71.8ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 152
+
+0: 544x640 17 cars, 4 trucks, 77.4ms
+Speed: 3.1ms preprocess, 77.4ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 153
+
+0: 544x640 17 cars, 4 trucks, 76.6ms
+Speed: 3.1ms preprocess, 76.6ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 154
+
+0: 544x640 17 cars, 4 trucks, 69.6ms
+Speed: 3.5ms preprocess, 69.6ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 155
+
+0: 544x640 15 cars, 6 trucks, 74.0ms
+Speed: 3.4ms preprocess, 74.0ms inference, 0.4ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 156
+
+0: 544x640 18 cars, 4 trucks, 71.7ms
+Speed: 3.8ms preprocess, 71.7ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 157
+
+0: 544x640 19 cars, 4 trucks, 88.9ms
+Speed: 3.1ms preprocess, 88.9ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 158
+
+0: 544x640 18 cars, 4 trucks, 94.6ms
+Speed: 3.1ms preprocess, 94.6ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 159
+
+0: 544x640 18 cars, 3 trucks, 68.2ms
+Speed: 3.0ms preprocess, 68.2ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 160
+
+0: 544x640 18 cars, 3 trucks, 68.8ms
+Speed: 3.1ms preprocess, 68.8ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 161
+
+0: 544x640 18 cars, 3 trucks, 1 bus, 67.3ms
+Speed: 3.3ms preprocess, 67.3ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 162
+
+0: 544x640 19 cars, 4 trucks, 76.3ms
+Speed: 3.1ms preprocess, 76.3ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 163
+
+0: 544x640 17 cars, 4 trucks, 73.5ms
+Speed: 3.2ms preprocess, 73.5ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 164
+
+0: 544x640 16 cars, 4 trucks, 69.6ms
+Speed: 3.2ms preprocess, 69.6ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 165
+
+0: 544x640 18 cars, 4 trucks, 88.2ms
+Speed: 3.3ms preprocess, 88.2ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 166
+
+0: 544x640 19 cars, 3 trucks, 71.2ms
+Speed: 3.2ms preprocess, 71.2ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 167
+
+0: 544x640 20 cars, 4 trucks, 1 other, 68.9ms
+Speed: 3.2ms preprocess, 68.9ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 168
+
+0: 544x640 19 cars, 5 trucks, 1 other, 68.5ms
+Speed: 3.1ms preprocess, 68.5ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 169
+
+0: 544x640 20 cars, 4 trucks, 1 bus, 67.2ms
+Speed: 3.1ms preprocess, 67.2ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 170
+
+0: 544x640 20 cars, 5 trucks, 92.4ms
+Speed: 3.5ms preprocess, 92.4ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 171
+
+0: 544x640 19 cars, 5 trucks, 72.5ms
+Speed: 3.3ms preprocess, 72.5ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 172
+
+0: 544x640 17 cars, 7 trucks, 71.9ms
+Speed: 3.0ms preprocess, 71.9ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 173
+
+0: 544x640 18 cars, 6 trucks, 71.5ms
+Speed: 3.1ms preprocess, 71.5ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 174
+
+0: 544x640 19 cars, 6 trucks, 68.6ms
+Speed: 3.4ms preprocess, 68.6ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 175
+
+0: 544x640 17 cars, 7 trucks, 68.8ms
+Speed: 3.2ms preprocess, 68.8ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 176
+
+0: 544x640 19 cars, 5 trucks, 67.7ms
+Speed: 3.1ms preprocess, 67.7ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 177
+
+0: 544x640 20 cars, 3 trucks, 95.4ms
+Speed: 3.5ms preprocess, 95.4ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 178
+
+0: 544x640 20 cars, 5 trucks, 90.1ms
+Speed: 3.0ms preprocess, 90.1ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 179
+
+0: 544x640 19 cars, 5 trucks, 71.1ms
+Speed: 3.0ms preprocess, 71.1ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 180
+
+0: 544x640 18 cars, 7 trucks, 103.2ms
+Speed: 3.8ms preprocess, 103.2ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 181
+
+0: 544x640 17 cars, 6 trucks, 68.7ms
+Speed: 3.0ms preprocess, 68.7ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 182
+
+0: 544x640 17 cars, 5 trucks, 71.4ms
+Speed: 3.1ms preprocess, 71.4ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 183
+
+0: 544x640 17 cars, 5 trucks, 71.7ms
+Speed: 3.1ms preprocess, 71.7ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 184
+
+0: 544x640 18 cars, 3 trucks, 1 bus, 72.1ms
+Speed: 3.5ms preprocess, 72.1ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 185
+
+0: 544x640 17 cars, 5 trucks, 1 bus, 72.1ms
+Speed: 3.0ms preprocess, 72.1ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 186
+
+0: 544x640 16 cars, 6 trucks, 1 bus, 80.8ms
+Speed: 3.2ms preprocess, 80.8ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 187
+
+0: 544x640 19 cars, 6 trucks, 71.2ms
+Speed: 3.2ms preprocess, 71.2ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 188
+
+0: 544x640 18 cars, 7 trucks, 1 bus, 88.7ms
+Speed: 3.2ms preprocess, 88.7ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 189
+
+0: 544x640 17 cars, 5 trucks, 1 bus, 70.1ms
+Speed: 3.1ms preprocess, 70.1ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 190
+
+0: 544x640 16 cars, 6 trucks, 69.0ms
+Speed: 3.3ms preprocess, 69.0ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 191
+
+0: 544x640 16 cars, 5 trucks, 1 bus, 72.4ms
+Speed: 3.4ms preprocess, 72.4ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 192
+
+0: 544x640 17 cars, 5 trucks, 1 bus, 69.4ms
+Speed: 3.1ms preprocess, 69.4ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 193
+
+0: 544x640 19 cars, 4 trucks, 2 buss, 91.6ms
+Speed: 3.5ms preprocess, 91.6ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 194
+
+0: 544x640 18 cars, 5 trucks, 2 buss, 70.4ms
+Speed: 3.7ms preprocess, 70.4ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 195
+
+0: 544x640 16 cars, 8 trucks, 1 bus, 77.8ms
+Speed: 3.0ms preprocess, 77.8ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 196
+
+0: 544x640 17 cars, 8 trucks, 2 buss, 108.5ms
+Speed: 4.3ms preprocess, 108.5ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 197
+
+0: 544x640 16 cars, 6 trucks, 1 bus, 146.8ms
+Speed: 5.5ms preprocess, 146.8ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 198
+
+0: 544x640 16 cars, 5 trucks, 1 bus, 108.3ms
+Speed: 3.4ms preprocess, 108.3ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 199
+
+0: 544x640 14 cars, 6 trucks, 1 bus, 89.1ms
+Speed: 3.4ms preprocess, 89.1ms inference, 0.4ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 200
+
+0: 544x640 16 cars, 5 trucks, 1 bus, 94.5ms
+Speed: 3.6ms preprocess, 94.5ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 201
+
+0: 544x640 17 cars, 6 trucks, 1 bus, 98.6ms
+Speed: 3.2ms preprocess, 98.6ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 202
+
+0: 544x640 19 cars, 5 trucks, 1 bus, 80.4ms
+Speed: 3.4ms preprocess, 80.4ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 203
+
+0: 544x640 17 cars, 6 trucks, 1 bus, 69.4ms
+Speed: 3.4ms preprocess, 69.4ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 204
+
+0: 544x640 17 cars, 6 trucks, 1 bus, 99.6ms
+Speed: 3.4ms preprocess, 99.6ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 205
+
+0: 544x640 17 cars, 6 trucks, 1 bus, 97.5ms
+Speed: 3.3ms preprocess, 97.5ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 206
+
+0: 544x640 15 cars, 6 trucks, 1 bus, 93.1ms
+Speed: 3.4ms preprocess, 93.1ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 207
+
+0: 544x640 16 cars, 6 trucks, 1 bus, 90.4ms
+Speed: 3.1ms preprocess, 90.4ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 208
+
+0: 544x640 16 cars, 6 trucks, 1 bus, 96.6ms
+Speed: 3.4ms preprocess, 96.6ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 209
+
+0: 544x640 17 cars, 6 trucks, 1 bus, 86.8ms
+Speed: 3.5ms preprocess, 86.8ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 210
+
+0: 544x640 14 cars, 5 trucks, 1 bus, 98.4ms
+Speed: 4.0ms preprocess, 98.4ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 211
+
+0: 544x640 13 cars, 5 trucks, 1 bus, 104.0ms
+Speed: 4.3ms preprocess, 104.0ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 212
+
+0: 544x640 13 cars, 6 trucks, 1 bus, 108.3ms
+Speed: 3.7ms preprocess, 108.3ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 213
+
+0: 544x640 15 cars, 6 trucks, 1 bus, 87.6ms
+Speed: 3.3ms preprocess, 87.6ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 214
+
+0: 544x640 15 cars, 7 trucks, 1 bus, 95.4ms
+Speed: 3.1ms preprocess, 95.4ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 215
+
+0: 544x640 15 cars, 8 trucks, 2 buss, 87.1ms
+Speed: 3.5ms preprocess, 87.1ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 216
+
+0: 544x640 17 cars, 8 trucks, 2 buss, 92.3ms
+Speed: 3.7ms preprocess, 92.3ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 217
+
+0: 544x640 19 cars, 7 trucks, 2 buss, 105.0ms
+Speed: 3.4ms preprocess, 105.0ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 218
+
+0: 544x640 18 cars, 7 trucks, 1 bus, 103.1ms
+Speed: 3.4ms preprocess, 103.1ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 219
+
+0: 544x640 18 cars, 7 trucks, 1 bus, 94.5ms
+Speed: 3.5ms preprocess, 94.5ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 220
+
+0: 544x640 17 cars, 7 trucks, 1 bus, 91.9ms
+Speed: 3.2ms preprocess, 91.9ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 221
+
+0: 544x640 18 cars, 6 trucks, 1 bus, 94.1ms
+Speed: 2.9ms preprocess, 94.1ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 222
+
+0: 544x640 18 cars, 5 trucks, 1 bus, 92.8ms
+Speed: 3.2ms preprocess, 92.8ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 223
+
+0: 544x640 19 cars, 3 trucks, 2 buss, 101.5ms
+Speed: 3.4ms preprocess, 101.5ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 224
+
+0: 544x640 17 cars, 4 trucks, 2 buss, 103.2ms
+Speed: 3.2ms preprocess, 103.2ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 225
+
+0: 544x640 15 cars, 5 trucks, 1 bus, 109.1ms
+Speed: 3.2ms preprocess, 109.1ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 226
+
+0: 544x640 16 cars, 3 trucks, 1 bus, 107.4ms
+Speed: 3.7ms preprocess, 107.4ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 227
+
+0: 544x640 15 cars, 5 trucks, 101.5ms
+Speed: 27.4ms preprocess, 101.5ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 228
+
+0: 544x640 18 cars, 3 trucks, 1 bus, 121.6ms
+Speed: 5.1ms preprocess, 121.6ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 229
+
+0: 544x640 16 cars, 4 trucks, 1 bus, 1 other, 101.0ms
+Speed: 3.2ms preprocess, 101.0ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 230
+
+0: 544x640 16 cars, 4 trucks, 2 buss, 96.3ms
+Speed: 3.5ms preprocess, 96.3ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 231
+
+0: 544x640 15 cars, 5 trucks, 2 buss, 69.3ms
+Speed: 3.2ms preprocess, 69.3ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 232
+
+0: 544x640 17 cars, 4 trucks, 2 buss, 75.0ms
+Speed: 3.2ms preprocess, 75.0ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 233
+
+0: 544x640 16 cars, 4 trucks, 1 bus, 78.5ms
+Speed: 3.6ms preprocess, 78.5ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 234
+
+0: 544x640 17 cars, 3 trucks, 1 bus, 69.7ms
+Speed: 3.1ms preprocess, 69.7ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 235
+
+0: 544x640 15 cars, 3 trucks, 1 bus, 97.9ms
+Speed: 4.5ms preprocess, 97.9ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 236
+
+0: 544x640 18 cars, 1 truck, 84.4ms
+Speed: 3.6ms preprocess, 84.4ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 237
+
+0: 544x640 16 cars, 3 trucks, 69.9ms
+Speed: 3.2ms preprocess, 69.9ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 238
+
+0: 544x640 17 cars, 3 trucks, 69.5ms
+Speed: 2.8ms preprocess, 69.5ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 239
+
+0: 544x640 17 cars, 3 trucks, 75.9ms
+Speed: 3.4ms preprocess, 75.9ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 240
+
+0: 544x640 16 cars, 2 trucks, 104.0ms
+Speed: 3.5ms preprocess, 104.0ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 241
+
+0: 544x640 15 cars, 3 trucks, 86.4ms
+Speed: 2.9ms preprocess, 86.4ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 242
+
+0: 544x640 14 cars, 3 trucks, 95.0ms
+Speed: 5.3ms preprocess, 95.0ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 243
+
+0: 544x640 15 cars, 3 trucks, 105.9ms
+Speed: 3.0ms preprocess, 105.9ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 244
+
+0: 544x640 15 cars, 3 trucks, 71.4ms
+Speed: 2.9ms preprocess, 71.4ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 245
+
+0: 544x640 15 cars, 3 trucks, 86.9ms
+Speed: 3.3ms preprocess, 86.9ms inference, 0.4ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 246
+
+0: 544x640 15 cars, 3 trucks, 76.3ms
+Speed: 3.4ms preprocess, 76.3ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 247
+
+0: 544x640 15 cars, 2 trucks, 103.2ms
+Speed: 3.0ms preprocess, 103.2ms inference, 0.4ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 248
+
+0: 544x640 16 cars, 2 trucks, 93.8ms
+Speed: 3.5ms preprocess, 93.8ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 249
+
+0: 544x640 15 cars, 2 trucks, 102.6ms
+Speed: 3.1ms preprocess, 102.6ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 250
+
+0: 544x640 13 cars, 3 trucks, 1 other, 110.6ms
+Speed: 3.2ms preprocess, 110.6ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 251
+
+0: 544x640 16 cars, 1 truck, 117.1ms
+Speed: 3.4ms preprocess, 117.1ms inference, 0.4ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 252
+
+0: 544x640 14 cars, 2 trucks, 87.5ms
+Speed: 3.2ms preprocess, 87.5ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 253
+
+0: 544x640 14 cars, 3 trucks, 96.5ms
+Speed: 2.7ms preprocess, 96.5ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 254
+
+0: 544x640 15 cars, 2 trucks, 95.8ms
+Speed: 2.7ms preprocess, 95.8ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 255
+
+0: 544x640 13 cars, 1 truck, 101.8ms
+Speed: 3.1ms preprocess, 101.8ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 256
+
+0: 544x640 13 cars, 1 truck, 127.6ms
+Speed: 3.3ms preprocess, 127.6ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 257
+
+0: 544x640 14 cars, 2 trucks, 108.8ms
+Speed: 3.2ms preprocess, 108.8ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 258
+
+0: 544x640 14 cars, 3 trucks, 100.3ms
+Speed: 2.7ms preprocess, 100.3ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 259
+
+0: 544x640 15 cars, 2 trucks, 101.0ms
+Speed: 2.7ms preprocess, 101.0ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 260
+
+0: 544x640 15 cars, 2 trucks, 70.4ms
+Speed: 2.9ms preprocess, 70.4ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 261
+
+0: 544x640 16 cars, 1 truck, 76.5ms
+Speed: 3.3ms preprocess, 76.5ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 262
+
+0: 544x640 15 cars, 2 trucks, 89.4ms
+Speed: 3.0ms preprocess, 89.4ms inference, 0.9ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 263
+
+0: 544x640 15 cars, 2 trucks, 90.7ms
+Speed: 3.2ms preprocess, 90.7ms inference, 0.4ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 264
+
+0: 544x640 14 cars, 3 trucks, 80.3ms
+Speed: 3.3ms preprocess, 80.3ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 265
+
+0: 544x640 15 cars, 3 trucks, 69.1ms
+Speed: 2.9ms preprocess, 69.1ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 266
+
+0: 544x640 14 cars, 5 trucks, 67.3ms
+Speed: 3.2ms preprocess, 67.3ms inference, 0.5ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 267
+
+0: 544x640 15 cars, 4 trucks, 104.3ms
+Speed: 3.5ms preprocess, 104.3ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 268
+
+0: 544x640 18 cars, 3 trucks, 106.5ms
+Speed: 3.6ms preprocess, 106.5ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 269
+
+0: 544x640 18 cars, 3 trucks, 83.9ms
+Speed: 4.1ms preprocess, 83.9ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 270
+
+0: 544x640 17 cars, 3 trucks, 76.7ms
+Speed: 3.1ms preprocess, 76.7ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 271
+
+0: 544x640 19 cars, 3 trucks, 89.0ms
+Speed: 3.6ms preprocess, 89.0ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 272
+
+0: 544x640 20 cars, 2 trucks, 73.5ms
+Speed: 3.3ms preprocess, 73.5ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 273
+
+0: 544x640 20 cars, 2 trucks, 108.5ms
+Speed: 3.0ms preprocess, 108.5ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 274
+
+0: 544x640 19 cars, 2 trucks, 99.2ms
+Speed: 3.6ms preprocess, 99.2ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 275
+
+0: 544x640 19 cars, 2 trucks, 97.0ms
+Speed: 3.4ms preprocess, 97.0ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 276
+
+0: 544x640 19 cars, 3 trucks, 94.6ms
+Speed: 3.2ms preprocess, 94.6ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 277
+
+0: 544x640 15 cars, 3 trucks, 93.7ms
+Speed: 3.6ms preprocess, 93.7ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 278
+
+0: 544x640 16 cars, 4 trucks, 101.7ms
+Speed: 3.7ms preprocess, 101.7ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 279
+
+0: 544x640 16 cars, 3 trucks, 1 bus, 95.2ms
+Speed: 3.1ms preprocess, 95.2ms inference, 0.4ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 280
+
+0: 544x640 18 cars, 3 trucks, 80.3ms
+Speed: 3.4ms preprocess, 80.3ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 281
+
+0: 544x640 18 cars, 5 trucks, 81.0ms
+Speed: 3.0ms preprocess, 81.0ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 282
+
+0: 544x640 20 cars, 3 trucks, 93.6ms
+Speed: 3.4ms preprocess, 93.6ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 283
+
+0: 544x640 17 cars, 4 trucks, 1 bus, 92.6ms
+Speed: 3.5ms preprocess, 92.6ms inference, 0.4ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 284
+
+0: 544x640 17 cars, 4 trucks, 118.2ms
+Speed: 5.3ms preprocess, 118.2ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 285
+
+0: 544x640 15 cars, 4 trucks, 90.1ms
+Speed: 5.9ms preprocess, 90.1ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 286
+
+0: 544x640 15 cars, 4 trucks, 72.1ms
+Speed: 3.3ms preprocess, 72.1ms inference, 0.4ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 287
+
+0: 544x640 15 cars, 5 trucks, 65.4ms
+Speed: 3.6ms preprocess, 65.4ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 288
+
+0: 544x640 17 cars, 4 trucks, 1 bus, 76.1ms
+Speed: 3.0ms preprocess, 76.1ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 289
+
+0: 544x640 18 cars, 3 trucks, 1 bus, 74.8ms
+Speed: 3.2ms preprocess, 74.8ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 290
+
+0: 544x640 18 cars, 3 trucks, 1 bus, 82.7ms
+Speed: 3.1ms preprocess, 82.7ms inference, 0.4ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 291
+
+0: 544x640 18 cars, 3 trucks, 110.3ms
+Speed: 3.7ms preprocess, 110.3ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 292
+
+0: 544x640 17 cars, 3 trucks, 86.4ms
+Speed: 3.4ms preprocess, 86.4ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 293
+
+0: 544x640 16 cars, 2 trucks, 106.4ms
+Speed: 3.2ms preprocess, 106.4ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 294
+
+0: 544x640 17 cars, 4 trucks, 87.8ms
+Speed: 3.4ms preprocess, 87.8ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 295
+
+0: 544x640 16 cars, 4 trucks, 131.6ms
+Speed: 3.3ms preprocess, 131.6ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 296
+
+0: 544x640 16 cars, 4 trucks, 97.7ms
+Speed: 3.9ms preprocess, 97.7ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 297
+
+0: 544x640 17 cars, 3 trucks, 89.3ms
+Speed: 3.4ms preprocess, 89.3ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 298
+
+0: 544x640 16 cars, 4 trucks, 70.6ms
+Speed: 3.0ms preprocess, 70.6ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 299
+
+0: 544x640 16 cars, 4 trucks, 121.3ms
+Speed: 3.4ms preprocess, 121.3ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 300
+
+0: 544x640 13 cars, 4 trucks, 100.6ms
+Speed: 2.9ms preprocess, 100.6ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 301
+
+0: 544x640 14 cars, 4 trucks, 115.1ms
+Speed: 29.3ms preprocess, 115.1ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 302
+
+0: 544x640 16 cars, 2 trucks, 132.7ms
+Speed: 5.5ms preprocess, 132.7ms inference, 0.3ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 303
+
+0: 544x640 15 cars, 2 trucks, 80.5ms
+Speed: 3.3ms preprocess, 80.5ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 304
+
+0: 544x640 14 cars, 3 trucks, 72.7ms
+Speed: 3.2ms preprocess, 72.7ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 305
+
+0: 544x640 15 cars, 4 trucks, 71.5ms
+Speed: 2.9ms preprocess, 71.5ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 306
+
+0: 544x640 15 cars, 3 trucks, 98.0ms
+Speed: 3.0ms preprocess, 98.0ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 307
+
+0: 544x640 14 cars, 3 trucks, 111.5ms
+Speed: 4.3ms preprocess, 111.5ms inference, 0.2ms postprocess per image at shape (1, 3, 544, 640)
+Resizing frame from (1320, 1080) to (1328, 1088)
+Processed frame 308
+Saved segment metadata to D:\bishe\LangGraph\video_tampering_agent\.cache\car_detection\demo-forgery\segments.json
+Saved bbox metadata to D:\bishe\LangGraph\video_tampering_agent\.cache\car_detection\demo-forgery\bboxes.json
+Video saved successfully.
