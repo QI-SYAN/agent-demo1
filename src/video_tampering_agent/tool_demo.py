@@ -10,6 +10,7 @@ from typing import Any, Dict
 from langchain_core.messages import HumanMessage
 
 from .config import AgentSettings
+from .reporting import generate_detection_report
 from .tools import ToolRegistry, register_builtin_tools
 from .workflow import build_detection_runnable
 
@@ -24,9 +25,10 @@ async def run_once(video_locator: str, question: str, metadata: Dict[str, Any]) 
     settings = AgentSettings()
     registry = build_registry()
     runnable = build_detection_runnable(registry, agent_settings=settings)
+    request_id = f"demo-{Path(video_locator).stem}"
 
     initial_state = {
-        "request_id": f"demo-{Path(video_locator).stem}",
+        "request_id": request_id,
         "video_locator": video_locator,
         "video_metadata": metadata,
         "messages": [HumanMessage(content=question)],
@@ -99,6 +101,40 @@ async def run_once(video_locator: str, question: str, metadata: Dict[str, Any]) 
     print("\n--- Audit Trail ---")
     for entry in result_state.get("audit_trail", []):
         print(f"- {entry}")
+
+    report_output_dir: Path | None = None
+    for item in evidence:
+        if item.get("tool") != "car_detection":
+            continue
+        detail = item.get("detail")
+        if isinstance(detail, dict) and detail.get("output_directory"):
+            report_output_dir = Path(str(detail["output_directory"]))
+            break
+
+    report_artifacts = generate_detection_report(
+        cache_root=Path(settings.cache_directory),
+        request_id=request_id,
+        video_locator=video_locator,
+        detection_status=status,
+        planning_text=result_state.get("planning_text"),
+        initial_tools=result_state.get("initial_tools", []),
+        deferred_tools=result_state.get("deferred_tools", []),
+        reflection_notes=result_state.get("reflection_notes", []),
+        reflection_decision=result_state.get("reflection_decision"),
+        evidence=evidence,
+        audit_trail=result_state.get("audit_trail", []),
+        target_directory=report_output_dir,
+    )
+
+    print("\n--- Report Artifacts ---")
+    print(f"Word: {report_artifacts.get('docx_path')}")
+    pdf_path = report_artifacts.get("pdf_path")
+    if pdf_path:
+        print(f"PDF: {pdf_path}")
+    else:
+        print("PDF: 未生成")
+    if report_artifacts.get("generation_error"):
+        print(f"提示: {report_artifacts['generation_error']}")
 
 
 def parse_args() -> argparse.Namespace:

@@ -1,0 +1,111 @@
+:root {
+  --primary: #409eff;
+  --deep-gray: #303133;
+  --bg: #f5f7fa;
+  --card-radius: 8px;
+
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "PingFang SC",
+    "Microsoft YaHei", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--deep-gray);
+  background-color: var(--bg);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+.app-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background: linear-gradient(90deg, #0f172a 0%, #111827 50%, #0b1220 100%);
+  color: #e5e7eb;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.app-header__title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.app-header__sub {
+  font-size: 12px;
+  opacity: 0.75;
+}
+
+.app-main {
+  flex: 1;
+  padding: 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 16px;
+}
+
+@media (max-width: 1200px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  border-radius: var(--card-radius);
+  box-shadow: 0 2px 10px rgba(17, 24, 39, 0.06);
+}
+
+.muted {
+  color: #909399;
+}
+
+/* 让 Element Plus 的卡片更“后台风”一些 */
+.el-card {
+  border-radius: var(--card-radius);
+}
+
+.el-card__header {
+  padding: 12px 16px;
+}
+
+.el-card__body {
+  padding: 16px;
+}

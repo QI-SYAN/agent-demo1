@@ -139,7 +139,7 @@ def find_all_zero_blocks(transposed_xymap):
                 end_index = i - 1
                 # 确保找到的零块不在列表的开头或结尾，并且至少有一个元素,相差大于2 比如1 3 就不行
                 # 增加时长阈值：从 2 改为 15 (约0.5秒)，过滤掉绝大多数检测抖动
-                if start_index != 0 and end_index != n - 1 and (end_index - start_index > 6):
+                if start_index != 0 and end_index != n - 1 and (end_index - start_index > 5):
                     zero_blocks.append((start_index, end_index))
                 if end_index == n - 1:
                     break

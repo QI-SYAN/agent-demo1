@@ -5,6 +5,7 @@ from __future__ import annotations
 from .background_residual import BackgroundResidualTool
 from .car_detection import CarDetectionTool
 from .video_metadata import VideoMetadataTool
+from .vlm_analysis import VLMAnalysisTool
 from .registry import ToolRegistry
 
 
@@ -15,6 +16,7 @@ def register_builtin_tools(registry: ToolRegistry, *, override: bool = False) ->
 		CarDetectionTool.name: lambda: CarDetectionTool(),
 		BackgroundResidualTool.name: lambda: BackgroundResidualTool(),
 		VideoMetadataTool.name: lambda: VideoMetadataTool(),
+		VLMAnalysisTool.name: lambda: VLMAnalysisTool(),
 	}
 
 	for name, factory in builtins.items():

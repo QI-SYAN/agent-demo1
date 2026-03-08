@@ -1,0 +1,34 @@
+cd d:\bishe\LangGraph\video_tampering_agent
+D:/miniconda/envs/Langgraph/python.exe -m src.video_tampering_agent.tool_demo "D:\resouce_bs\3_part004.mp4" "D:\resouce_bs\forgery.mp4"
+"D:\resouce_bs\1_part002.mp4" 
+"D:\resouce_bs\1_part003.mp4"
+"D:\resouce_bs\1_part001.mp4"
+VLM运行
+cd d:\bishe\LangGraph\video_tampering_agent\src
+python -m video_tampering_agent.tools.vlm_pair_uploader
+
+
+三个json
+video_quality_false_positive_rules.json
+用途：专门用于排除误报。当视觉模型检测到“异常”时，先查询此库，判断是否由视频质量或环境因素引起。
+特点：强调“不确定性”和“证据不足”，指导模型降低置信度或标记为“需人工复核”
+
+highway_behavior_rules.json
+用途：用于判断车辆行为是否符合交通法规。
+特点：包含具体的违规行为（逆行、违停等）及其合理的例外情况（如交警指挥、事故避让）。
+(注：此处精选了最核心的15条规则，您可根据需要扩充，逻辑与之前提供的类似，但更聚焦于合规性)
+
+tampering_vehicle_deletion_rules.json
+用途：专门用于判断“车辆是否被恶意删除/消失”，核心逻辑是物理连续性 vs 视觉中断。
+特点：强调轨迹的突然中断、阴影/反射的残留、背景纹理的不自然平滑。
+
+
+前端使用
+cd /d d:\bishe\LangGraph\video_tampering_agent\web
+npm install
+npm run dev
+
+后端运行
+cd /d d:\bishe\LangGraph\video_tampering_agent
+D:\miniconda\envs\Langgraph\python.exe -m pip install -e .
+D:\miniconda\envs\Langgraph\python.exe -m uvicorn video_tampering_agent.service:create_app --factory --host 127.0.0.1 --port 8000 --reload

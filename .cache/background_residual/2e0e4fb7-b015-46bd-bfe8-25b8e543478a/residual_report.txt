@@ -1,0 +1,7 @@
+request_id: 2e0e4fb7-b015-46bd-bfe8-25b8e543478a
+total_frames: 325
+warmup_frames: 3
+average_residual_ratio: 0.093355
+max_residual_ratio: 0.127442
+residual_threshold: 0.15
+suspicious_frames(sample<=100): []

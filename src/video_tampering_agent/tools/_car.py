@@ -10,6 +10,8 @@ import os
 import matplotlib.pyplot as plt
 import shutil
 import json
+import tempfile
+import yaml
 
 from _dataprocess import *
 
@@ -286,7 +288,7 @@ def write_to_file(filename, xymap, total_frames, i, names, classmap, speedmap, p
             file.write(f"{key}: {value}\n\n")  # 注意这里的'\n\n'会在每个键值对间添加一个空行
 
 # 对每一帧的结果进行处理
-def process_results(results, image, names, w, h, i,xymap,firstclass, roi_contour=None):
+def process_results(results, image, names, w, h, i,xymap,firstclass):
     numlist = [0,0,0,0]
     if hasattr(results, 'boxes') and results.boxes is not None:
         boxes = results.boxes
@@ -297,11 +299,6 @@ def process_results(results, image, names, w, h, i,xymap,firstclass, roi_contour
             track_id = int(boxes.id[idx]) - 1  # !!!track_id才是每个车唯一的编号 从0开始
             if track_id < 0:
                 continue
-
-            if roi_contour is not None:
-                bottom_center = (int((x1 + x2) / 2), y2)
-                if cv2.pointPolygonTest(roi_contour, bottom_center, False) < 0:
-                    continue
 
             if track_id in firstclass:
                 class_name = firstclass[track_id]
@@ -554,38 +551,62 @@ def main():
 
     w, h, fps = (int(cap.get(x)) for x in (cv2.CAP_PROP_FRAME_WIDTH, cv2.CAP_PROP_FRAME_HEIGHT, cv2.CAP_PROP_FPS))
 
+    # === 基于 FPS 动态设置 ByteTrack 的 track_buffer，约 3 秒 ===
+    if fps and fps > 0:
+        track_buffer = int(3.0 * fps)
+    else:
+        track_buffer = 90  # FPS 取不到时退回固定 90 帧
+
+    tracker_cfg = {
+        "tracker_type": "bytetrack",
+        "track_high_thresh": 0.25,
+        "track_low_thresh": 0.1,
+        "new_track_thresh": 0.25,
+        "track_buffer": track_buffer,
+        "match_thresh": 0.8,
+        "fuse_score": True,
+    }
+
+    tracker_yaml_path = os.path.join(tempfile.gettempdir(), "car_tracker_3s.yaml")
+    try:
+        with open(tracker_yaml_path, "w", encoding="utf-8") as f:
+            yaml.safe_dump(tracker_cfg, f, sort_keys=False, allow_unicode=True)
+        print(f"使用 ByteTrack 配置: {tracker_yaml_path}, track_buffer={track_buffer} 帧 (≈3s)")
+    except Exception as e:
+        print(f"Warning: 无法写入自定义 tracker 配置，退回默认 ByteTrack: {e}")
+        tracker_yaml_path = None
+
     def _clamp_axis(value, upper_bound):
         if upper_bound <= 0:
             return 0
         return max(0, min(upper_bound - 1, int(value)))
 
-    roi_contour = np.array([
-        [0, _clamp_axis(1000, h)],
-        [0, _clamp_axis(675, h)],
-        [_clamp_axis(270, w), _clamp_axis(435, h)],
-        [_clamp_axis(w - 1, w), _clamp_axis(435, h)],
-        [_clamp_axis(w - 1, w), _clamp_axis(1000, h)],
-    ], dtype=np.int32)
+    # roi_contour = np.array([
+    #     [0, _clamp_axis(1000, h)],
+    #     [0, _clamp_axis(675, h)],
+    #     [_clamp_axis(270, w), _clamp_axis(435, h)],
+    #     [_clamp_axis(w - 1, w), _clamp_axis(435, h)],
+    #     [_clamp_axis(w - 1, w), _clamp_axis(1000, h)],
+    # ], dtype=np.int32)
 
     # Ensure the Ultralytics helpers reuse the provided weights and avoid downloading defaults.
-    speed_obj = speed_estimation.SpeedEstimator(model=opt.weight, show=CAR_TOOL_DISPLAY)
+    # speed_obj = speed_estimation.SpeedEstimator(model=opt.weight, show=CAR_TOOL_DISPLAY)
     # Newer Ultralytics releases expose configuration via the CFG dictionary instead of set_args.
-    speed_obj.CFG["region"] = line_pts
-    speed_obj.region = line_pts
-    speed_obj.initialize_region()
-    speed_obj.names = names
+    # speed_obj.CFG["region"] = line_pts
+    # speed_obj.region = line_pts
+    # speed_obj.initialize_region()
+    # speed_obj.names = names
 
-    counter_obj = object_counter.ObjectCounter(model=opt.weight, show=CAR_TOOL_DISPLAY)
-    counter_obj.CFG["region"] = line_pts
-    counter_obj.region = line_pts
-    counter_obj.initialize_region()
-    counter_obj.region_initialized = True
-    counter_obj.names = names
+    # counter_obj = object_counter.ObjectCounter(model=opt.weight, show=CAR_TOOL_DISPLAY)
+    # counter_obj.CFG["region"] = line_pts
+    # counter_obj.region = line_pts
+    # counter_obj.initialize_region()
+    # counter_obj.region_initialized = True
+    # counter_obj.names = names
 
     total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
     # 车辆位置存储表，行为帧数,列为不同的车辆id，里面为x1, y1, x2, y2
     xymap = [[[-1.0, -1.0, -1.0, -1.0] for _ in range(150)] for _ in range(total_frames)]
-    # xymap = [[[-1.0, -1.0, -1.0, -1.0] for _ in range(total_frames*20)] for _ in range(total_frames)]
     # 车辆类型记录列表
     classmap = [[0,0,0,0] for _ in range(total_frames)]
     # 车辆首个类型存储列表
@@ -607,28 +628,25 @@ def main():
         success, im0 = cap.read()
         if not success:
             break
-        if roi_contour.size:
-            cv2.polylines(im0, [roi_contour], True, (0, 255, 255), 2)
-        tracking_results = model.track(im0, persist=True, show=False)
+        # if roi_contour.size:
+        #     cv2.polylines(im0, [roi_contour], True, (0, 255, 255), 2)
+        if tracker_yaml_path:
+            tracking_results = model.track(im0, persist=True, show=False, tracker=tracker_yaml_path)
+        else:
+            tracking_results = model.track(im0, persist=True, show=False)
         results_list = tracking_results if isinstance(tracking_results, list) else [tracking_results]
         numlist = [0, 0, 0, 0]
         for results in results_list:
-            frame_counts = process_results(results, im0, names, w, h, i, xymap, firstclass, roi_contour)
+            frame_counts = process_results(results, im0, names, w, h, i, xymap, firstclass)
             for idx in range(len(numlist)):
                 numlist[idx] += frame_counts[idx]
         classmap[i] = copy.deepcopy(numlist)
-        # 当前帧的xymap已经做好了 为xymap[i],可以找到当前帧的车辆之间相对位置
-        # 车辆位置存储表单行，行为不同的车辆id，里面为x1, y1, x2, y2
-        # count_vehicles_in_quadrants(xymap, circle_count_map, i, rmultiple)
-        # count_vehicles_in_parallelograms(xymap, parallelogram_count_map, i, left_angle_degrees, right_angle_degrees, height_multiple, extend_width_multiple,left_right_xboundary,im0)
-        # draw_and_count(xymap, parallelogram_count_map, i, left_angle_degrees, right_angle_degrees,
-        #                height_multiple, extend_width_multiple,left_right_xboundary,im0)
-
+            # 计算并绘制平行四边形及计数
         draw_and_count(im0, xymap, parallelogram_count_map, parallelogram_id_map, i, left_angle_degrees, right_angle_degrees,
                        height_multiple, extend_width_multiple, left_right_xboundary, draw_filename,draw=False)
         # 让 Ultralytics Solutions 使用缓存的 tracking 结果完成计数与速度标注。
-        im0 = _apply_object_counter(counter_obj, im0, results_list)
-        im0 = _apply_speed_estimator(speed_obj, im0, results_list, speedmap[i])
+        # im0 = _apply_object_counter(counter_obj, im0, results_list)
+        # im0 = _apply_speed_estimator(speed_obj, im0, results_list, speedmap[i])
 
         rgb_frame = cv2.cvtColor(im0, cv2.COLOR_BGR2RGB)
         rgb_frame = adjust_frame_size(rgb_frame)  # 调整帧大小

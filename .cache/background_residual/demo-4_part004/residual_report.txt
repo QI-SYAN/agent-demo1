@@ -1,0 +1,7 @@
+request_id: demo-4_part004
+total_frames: 325
+warmup_frames: 3
+average_residual_ratio: 0.067715
+max_residual_ratio: 0.093419
+residual_threshold: 0.15
+suspicious_frames(sample<=100): []

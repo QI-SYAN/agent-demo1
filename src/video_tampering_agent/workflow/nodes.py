@@ -48,6 +48,7 @@ def _extract_planned_tools(text: str, registry: ToolRegistry) -> list[str]:
     aliases: dict[str, tuple[str, ...]] = {
         "car_detection": ("car_detection", "车辆检测", "车辆轨迹"),
         "background_residual": ("background_residual", "背景残差", "背景建模"),
+        "vlm_analysis": ("vlm_analysis", "视觉分析", "vlm", "视觉大模型"),
     }
     for tool in registry.all_tools():
         name = getattr(tool, "name", "")
@@ -91,8 +92,9 @@ async def analyze_with_llm(state: AgentState, *, settings: AgentSettings, regist
         "你是视频取证分析师。请制定分阶段的分析计划：\n"
         "1. **初筛阶段 (Initial)**：必须先使用 `background_residual` 和 `video_metadata` (如果可用) 进行多维度扫描。\n"
         "2. **深查阶段 (Deferred)**：将 `car_detection` 列为深查工具。注意：如果初筛发现任何背景异常、元数据痕迹，或者为了排除高风险的轨迹擦除篡改，都必须在后续执行此工具。\n"
+        "3. **视觉复核 (Deferred)**：如果 `car_detection` 发现异常，必须调用 `vlm_analysis` 进行二次确认。\n"
         f"当前可用工具：{available_tools}。\n"
-        "请在最后给出一行 JSON: {\"initial_tools\": [\"background_residual\", \"video_metadata\"], \"deferred_tools\": [\"car_detection\"]}。\n"
+        "请在最后给出一行 JSON: {\"initial_tools\": [\"background_residual\", \"video_metadata\"], \"deferred_tools\": [\"car_detection\", \"vlm_analysis\"]}。\n"
         f"{reflection_text}"
     )
     audit = list(state.get("audit_trail", []))
@@ -121,8 +123,8 @@ async def analyze_with_llm(state: AgentState, *, settings: AgentSettings, regist
         LOGGER.warning("LLM 调用失败，使用降级计划: %s", exc)
         fallback_plan = (
             "1. 初筛：使用 background_residual 和 video_metadata\n"
-            "2. 深查：使用 car_detection\n"
-            '{"initial_tools": ["background_residual", "video_metadata"], "deferred_tools": ["car_detection"]}'
+            "2. 深查：使用 car_detection 和 vlm_analysis\n"
+            '{"initial_tools": ["background_residual", "video_metadata"], "deferred_tools": ["car_detection", "vlm_analysis"]}'
         )
         response = AIMessage(content=fallback_plan)
 
@@ -158,7 +160,7 @@ async def analyze_with_llm(state: AgentState, *, settings: AgentSettings, regist
     if not initial_tools and not deferred_tools:
         # 默认回退
         initial_tools = ["background_residual", "video_metadata"]
-        deferred_tools = ["car_detection"]
+        deferred_tools = ["car_detection", "vlm_analysis"]
 
     audit.append("analyze_with_llm: LLM plan ready")
     audit.append(f"analyze_with_llm: plan -> {raw_content}")
@@ -244,6 +246,18 @@ async def execute_registered_tools(
                 tool_result = await maybe_async(context)
             else:
                 tool_result = tool.invoke(context)
+            
+            # 动态更新上下文：如果 car_detection 生成了图片目录，传递给后续工具 (如 vlm_analysis)
+            if tool.name == "car_detection" and isinstance(tool_result, dict):
+                out_dir = tool_result.get("output_directory")
+                if out_dir:
+                    # 构造 images 子目录路径
+                    import os
+                    images_path = os.path.join(out_dir, "images")
+                    if os.path.exists(images_path):
+                        context["images_dir"] = images_path
+                        LOGGER.info("context_updated", images_dir=images_path)
+
         except Exception as exc:  # pragma: no cover - defensive
             LOGGER.exception("tool_failed", tool=tool.name)
             evidence.append({"tool": tool.name, "status": "error", "detail": str(exc)})
@@ -420,6 +434,19 @@ def finalize_assessment(state: AgentState, *, threshold: float) -> AgentState:
                         detail.get("suspicious_frames", []),
                     )
                 )
+
+            # 4. 检查 VLM 结果
+            if tool_name == "vlm_analysis":
+                # VLM 返回的是文本报告，我们需要解析一下或者直接作为证据
+                # 假设 VLM 报告里包含 "篡改" 或 "异常" 等关键词
+                vlm_text = str(detail)
+                if "篡改" in vlm_text or "消失" in vlm_text or "异常" in vlm_text:
+                    # VLM 确认了异常，极大增加置信度
+                    confidence = max(confidence, 0.95)
+                    entry_parts.append("VLM视觉复核确认存在异常")
+                else:
+                    # VLM 没发现问题，可能会降低置信度，或者作为补充说明
+                    entry_parts.append("VLM视觉复核未发现明显异常")
 
             vanish_tracks = detail.get("suspected_vanish_tracks") or []
             if vanish_tracks:
